@@ -7,20 +7,19 @@ fetch('data.json')
             const cardItem = document.createElement('div');
             cardItem.classList.add('card');
 
-            let clickCount = 0; 
+            let clickCount = 0;
 
             cardItem.innerHTML = `
-                <div class="card"style="width: 18rem;">
-  <alt="#">
-  <div class="card-body">
-    <h5 class="card-title">${product.Name}</h5>
-    <p class="card-text">${product.price}</p>
-    <p class="card-text">${clickCount}</p>
-    <button class="addToCartBtn">Add to Cart</button>
-    <button class="cancelBtn">Cancel</button>
-    <p> Quantity: <span class="clickCount">${clickCount}</span></p>
-  </div>
-</div>
+                <div class="card" style="width: 18rem;">
+                    <alt="#">
+                        <div class="card-body">
+                            <h5 class="card-title">${product.Name}</h5>
+                            <p class="card-text">${product.price}</p>
+                            <button class="addToCartBtn">Add to Cart</button>
+                            <button class="cancelBtn">Cancel</button>
+                            <p> Quantity: <span class="clickCount">${clickCount}</span></p>
+                        </div>
+                </div>
             `;
 
             const addToCartButton = cardItem.querySelector('.addToCartBtn');
